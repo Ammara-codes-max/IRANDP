@@ -1,0 +1,11 @@
+{
+  "particles":{
+    "number":{"value":80},
+    "color":{"value":"#38BDF8"},
+    "shape":{"type":"circle"},
+    "opacity":{"value":0.6},
+    "size":{"value":3},
+    "line_linked":{"enable":true,"color":"#0ea5e9"},
+    "move":{"speed":1.8}
+  }
+}

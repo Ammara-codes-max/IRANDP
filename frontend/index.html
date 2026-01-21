@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>IRANDP – Cyber Defense Command Center</title>
+<link rel="stylesheet" href="irandp.css">
+</head>
+<body>
+
+<div id="particles-js"></div>
+
+<div class="overlay" id="overlay">
+  <h1>IRANDP</h1>
+  <h3>Intelligent Rule-Based Autonomous Network Defense Platform</h3>
+  <p>Next-Generation Cyber Threat Prevention System</p>
+
+  <button id="enterBtn" onclick="enter()">ENTER COMMAND CENTER</button>
+  <div id="loadingText" style="display:none;color:#22c55e;margin-top:20px;font-size:18px;">
+      Initializing Cyber Defense Matrix...
+  </div>
+</div>
+
+<script src="particles.min.js"></script>
+
+<script>
+particlesJS.load('particles-js','particles.json');
+
+function enter(){
+  const btn = document.getElementById("enterBtn");
+  const txt = document.getElementById("loadingText");
+
+  btn.disabled = true;
+  btn.innerText = "LAUNCHING...";
+  txt.style.display = "block";
+
+  document.body.classList.add("zoom");
+
+  setTimeout(()=>{
+    window.location.href = "http://127.0.0.1:8080/dashboard";
+  }, 1600);
+}
+</script>
+
+</body>
+</html>

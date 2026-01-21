@@ -1,0 +1,38 @@
+html,body{
+  margin:0; height:100%; background:#030712; overflow:hidden;
+  font-family:'Segoe UI',sans-serif;
+}
+
+#particles-js{
+  position:absolute; width:100%; height:100%;
+}
+
+.overlay{
+  position:absolute; width:100%; height:100%;
+  display:flex; flex-direction:column;
+  justify-content:center; align-items:center;
+  text-align:center; color:#38bdf8;
+  backdrop-filter: blur(2px);
+}
+
+h1{font-size:72px; letter-spacing:4px;}
+h3{color:#22c55e;}
+p{color:#94a3b8;}
+
+button{
+  margin-top:40px; padding:15px 40px;
+  background:#22c55e; border:none;
+  font-size:18px; cursor:pointer;
+  box-shadow:0 0 30px #22c55e;
+  transition:0.3s;
+}
+
+button:hover{
+  box-shadow:0 0 60px #22c55e;
+  transform:scale(1.1);
+}
+
+body.zoom{ animation:zoom 1.5s forwards; }
+@keyframes zoom{
+  to{transform:scale(1.4); opacity:0;}
+}
